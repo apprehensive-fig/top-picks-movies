@@ -1,10 +1,13 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Pro:wght@200&family=Goblin+One&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
-
+$body-font: 'Bitter', serif;
+$headers-font: 'Abril Fatface', cursive;
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

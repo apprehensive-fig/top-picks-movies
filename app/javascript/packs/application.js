@@ -15,3 +15,12 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+initSweetalert('#sweet-alert-demo', {
+  title: "are you sure?",
+  icon: "warning"
+}, (value) => {
+  if (value) {
+    const link = document.querySelector('#delete-link');
+    link.click();
+  }
+});
