@@ -3,7 +3,9 @@
 <% @list.bookmarks.each do |bookmark|%>
 <%= image_tag "#{bookmark.movie.poster_url}"%>
 <p><%= bookmark.comment %>
+<%= link_to 'delete', bookmark_path(bookmark), method: :delete %>
 <% end %>
 </br>
 <%= link_to 'add bookmark', new_list_bookmark_path(@list) %></br>
+
 <%= link_to 'back to lists', lists_path %>
