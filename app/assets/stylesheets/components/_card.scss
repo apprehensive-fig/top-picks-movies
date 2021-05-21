@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   color: $black;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
@@ -25,16 +25,31 @@
 
 .card-category-show img {
   height:200px;
-
 }
 
 .card-large {
   height: 30vh;
 }
 
+.movie-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 img {
-    height: 300px;
-    padding-top: 10px;
-    margin: 0 auto;
-    display: block;
+  height: 300px;
+  width: auto;
+  padding-top: 10px;
+  margin: 0 auto;
 }
