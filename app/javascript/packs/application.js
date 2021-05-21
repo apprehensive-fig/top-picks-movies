@@ -17,11 +17,13 @@ import 'bootstrap';
 // const imagePath = (name) => images(name, true)
 import { initSweetalert } from '../plugins/init_sweetalert';
 
-initSweetalert('#sweet-alert-demo', {
-  title: "are you sure?",
-}, (value) => {
-  if (value) {
-    const link = document.querySelector('#delete-link');
-    link.click();
-  }
+document.addEventListener('turbolinks:load', () => {
+  initSweetalert('#sweet-alert-demo', {
+    title: "Are you sure?",
+  }, (value) => {
+    if (value) {
+      const link = document.querySelector('#delete-link');
+      link.click();
+    }
+  });
 });
