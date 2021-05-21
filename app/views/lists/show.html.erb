@@ -6,7 +6,7 @@
     <div>
       <span class="movie-tag "><%= pluralize(@list.movies.size, 'movie') %></span></br>
        <%= link_to 'add a movie', new_list_bookmark_path(@list), class: 'btn btn-flat border border-dark' %>
-       <button id="sweet-alert-demo" class="btn btn-cancel border border-dark"> delete </button>
+       <button id="sweet-alert-demo" class="btn btn-cancel border border-dark"> delete list </button>
       <%= link_to '', list_path(@list), method: :delete, id: "delete-link", class: "hidden" %>
       <%= link_to 'back', lists_path, class: 'btn btn-flat border border-dark' %>
     </div>
