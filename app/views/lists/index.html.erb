@@ -5,10 +5,10 @@
   </div>
   <div class="d-flex flex-row" style="height: 400px width:100px">
     <% @lists.each do |list| %>
-      <div class="co-10 colsm-4 col-md-3 border border-dark d-flex justify-content-center ml-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : ""; %>)">
+      <div id="image-card" class="col-10 colsm-4 col-md-3 border border-dark d-flex justify-content-center ml-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : ""; %>)"%>
         <%= link_to list_path(list), class:'text-decoration-none' do %>
           <div class="card-category-index text-center" data-aos="zoom-in">
-            <%= list.name %>
+            <p><%= list.name %></p>
           </div>
         <% end %>
       </div>
