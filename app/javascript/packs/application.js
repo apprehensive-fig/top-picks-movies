@@ -15,6 +15,8 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import { initSweetalert } from '../plugins/init_sweetalert';
+
 initSweetalert('#sweet-alert-demo', {
   title: "are you sure?",
   icon: "warning"
